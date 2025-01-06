@@ -26,16 +26,23 @@
   targets.genericLinux.enable = true;
 
   home.packages = [
-    pkgs.uv
+    # Work tools
     pkgs.eza
     pkgs.ghq
     pkgs.glab
     pkgs.jq
     pkgs.lazygit
-    pkgs.neovim
-    pkgs.vscodium
+    pkgs.uv
     (config.lib.nixGL.wrap pkgs.spotube)
     (config.lib.nixGL.wrap pkgs.wezterm)
+
+    # Editors
+    pkgs.neovim
+    pkgs.obsidian
+    pkgs.vscodium
+
+    # Entertainment
+    pkgs.discord
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
