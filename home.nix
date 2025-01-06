@@ -27,21 +27,6 @@
   # Allow unfree to install Obisidan
   nixpkgs.config.allowUnfree = true;
 
-  # GNOME does not show desktop entries until logout.
-  # This is an attemp to create workaround
-  # https://github.com/nix-community/home-manager/issues/1439
-  # Not working, TODO:
-  targets.genericLinux.enable = true;
-  xdg.enable = true;
-  xdg.mime.enable = true;
-  xdg.systemDirs.data = [ "${config.home.homeDirectory}/.nix-profile/share/applications" ];
-  
-  # Quick and dirty soulution, icons not showing
-  #  home.activation = {
-  #    refreshDesktopEntries = config.lib.dag.entryAfter ["writeBoundary"] ''
-  #     /usr/bin/update-desktop-database ${config.home.homeDirectory}/.nix-profile/share/applications/.
-  #    '';  
-  #  };
 
   home.packages = [
     # Work tools
@@ -111,6 +96,13 @@
     # EDITOR = "emacs";
   };
   
+  # GNOME does not show desktop entries until logout.
+  # This is an attemp to create workaround
+  # https://github.com/nix-community/home-manager/issues/1439
+  # Not working, TODO:
+  targets.genericLinux.enable = true;
+  xdg.enable = true;
+  xdg.mime.enable = true;
 
   # Keep list of existing desktop files and upon installation create icon for the newly created
   # Impure - dependent on config in ~/.zprofile
