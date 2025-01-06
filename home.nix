@@ -96,16 +96,11 @@
     # EDITOR = "emacs";
   };
   
-  # GNOME does not show desktop entries until logout.
-  # This is an attemp to create workaround
-  # https://github.com/nix-community/home-manager/issues/1439
-  # Not working, TODO:
   targets.genericLinux.enable = true;
-  xdg.enable = true;
   xdg.mime.enable = true;
 
   # Keep list of existing desktop files and upon installation create icon for the newly created
-  # Impure - dependent on config in ~/.zprofile
+  # Impure - dependent on config in ~/.zprofile and the list
   home.activation = {
     linkDesktopApplications = {
       after = ["writeBoundary" "createXdgUserDirectories"];
