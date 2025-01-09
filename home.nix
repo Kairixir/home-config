@@ -31,14 +31,16 @@
   home.packages = [
     # Work tools
     pkgs.eza
-    pkgs.ghq
-    pkgs.glab
     pkgs.gnomeExtensions.xremap
     pkgs.jq
-    pkgs.lazygit
     pkgs.uv
     (config.lib.nixGL.wrap pkgs.spotube)
     (config.lib.nixGL.wrap pkgs.wezterm)
+
+    ## Version control
+    pkgs.ghq
+    pkgs.glab
+    pkgs.lazygit
 
     # Filesystems
     pkgs.veracrypt
