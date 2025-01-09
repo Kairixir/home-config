@@ -37,6 +37,7 @@
     pkgs.jq
     pkgs.lazygit
     pkgs.uv
+    pkgs.veracrypt
     (config.lib.nixGL.wrap pkgs.spotube)
     (config.lib.nixGL.wrap pkgs.wezterm)
 
