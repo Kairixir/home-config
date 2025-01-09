@@ -33,6 +33,7 @@
     pkgs.eza
     pkgs.ghq
     pkgs.glab
+    pkgs.gnomeExtensions.xremap
     pkgs.jq
     pkgs.lazygit
     pkgs.uv
