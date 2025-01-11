@@ -41,6 +41,7 @@
     pkgs.ghq
     pkgs.glab
     pkgs.lazygit
+    pkgs.jujutsu
 
     # Filesystems
     pkgs.veracrypt
