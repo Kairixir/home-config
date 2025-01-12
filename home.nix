@@ -38,6 +38,9 @@
     (config.lib.nixGL.wrap pkgs.spotube)
     (config.lib.nixGL.wrap pkgs.wezterm)
 
+    ## Remote control
+    pkgs.rustdesk
+
     ## Version control
     pkgs.ghq
     pkgs.glab
