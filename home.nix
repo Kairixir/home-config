@@ -54,6 +54,7 @@
     
     # Education
     pkgs.zotero
+    pkgs.megasync
 
     # Entertainment
     pkgs.discord
