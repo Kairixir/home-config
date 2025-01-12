@@ -34,6 +34,7 @@
     pkgs.gnomeExtensions.xremap
     pkgs.jq
     pkgs.uv
+    pkgs.progress
     (config.lib.nixGL.wrap pkgs.spotube)
     (config.lib.nixGL.wrap pkgs.wezterm)
 
