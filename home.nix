@@ -39,7 +39,7 @@
     (config.lib.nixGL.wrap pkgs.wezterm)
 
     ## Remote control
-    pkgs.rustdesk
+    # pkgs.rustdesk -> nix has old package version
 
     ## Version control
     pkgs.ghq
