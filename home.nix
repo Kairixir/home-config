@@ -51,6 +51,9 @@
     pkgs.neovim
     pkgs.obsidian
     pkgs.vscodium
+    
+    # Education
+    pkgs.zotero
 
     # Entertainment
     pkgs.discord
