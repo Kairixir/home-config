@@ -60,6 +60,14 @@
     pkgs.zotero
     pkgs.megasync
 
+    # Privacy
+    pkgs.dnscrypt-proxy
+    pkgs.i2p
+    pkgs.tor
+    ## Tor browser does not load confugration from /etc/tor/torrc !
+    # pkgs.tor-browser
+    pkgs.wireguard-tools
+
     # Entertainment
     pkgs.discord
 
