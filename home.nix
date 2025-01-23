@@ -69,7 +69,14 @@
     pkgs.wireguard-tools
 
     # Entertainment
+    ## Social
     pkgs.discord
+
+    ## Games
+    pkgs.protontricks
+    pkgs.wine
+    # Unstable does not have the latest version yet
+    # pkgs.winetricks
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -154,6 +161,7 @@
         ${pkgs.desktop-file-utils}/bin/update-desktop-database ${config.home.homeDirectory}/.local/share/applications
       '';
     };
+
   };
 
 
