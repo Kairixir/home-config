@@ -59,6 +59,9 @@
     # Education
     pkgs.zotero
     pkgs.megasync
+    
+    # Package managers
+    pkgs.cargo
 
     # Privacy
     pkgs.dnscrypt-proxy
