@@ -66,11 +66,12 @@
     # Privacy
     pkgs.dnscrypt-proxy
     pkgs.i2p
+    pkgs.qbittorrent
     pkgs.tor
+    pkgs.wireguard-tools
+    
     ## Tor browser does not load confugration from /etc/tor/torrc !
     # pkgs.tor-browser
-    pkgs.wireguard-tools
-    pkgs.qbittorrent
 
     # Entertainment
     ## Social
