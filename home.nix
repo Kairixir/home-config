@@ -62,6 +62,9 @@
     
     # Package managers
     pkgs.cargo
+    
+    # System management
+    pkgs.ventoy
 
     # Privacy
     pkgs.dnscrypt-proxy
