@@ -59,6 +59,7 @@
     # Education
     pkgs.zotero
     pkgs.megasync
+    pkgs.drawio
     
     # Package managers
     pkgs.cargo
