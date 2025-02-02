@@ -67,6 +67,11 @@
     # System management
     pkgs.ventoy
 
+    # Networking
+    pkgs.nmap
+    pkgs.wavemon
+    pkgs.linssid
+
     # Privacy
     pkgs.dnscrypt-proxy
     pkgs.i2p
