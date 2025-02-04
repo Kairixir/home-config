@@ -85,6 +85,8 @@
     # Entertainment
     ## Social
     pkgs.discord
+    ## Video
+    pkgs.vlc
 
     ## Games
     pkgs.protontricks
