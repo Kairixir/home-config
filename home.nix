@@ -44,8 +44,8 @@
     ## Version control
     pkgs.ghq
     pkgs.glab
-    pkgs.lazygit
     pkgs.jujutsu
+    pkgs.lazygit
 
     # Filesystems
     pkgs.veracrypt
@@ -57,9 +57,9 @@
     pkgs.vscodium
     
     # Education
-    pkgs.zotero
-    pkgs.megasync
     pkgs.drawio
+    pkgs.megasync
+    pkgs.zotero
     
     # Package managers
     pkgs.cargo
@@ -68,16 +68,16 @@
     pkgs.ventoy
 
     # Networking
+    pkgs.linssid
     pkgs.nmap
     pkgs.wavemon
-    pkgs.linssid
+    pkgs.wireguard-tools
 
     # Privacy
     pkgs.dnscrypt-proxy
     pkgs.i2p
     pkgs.qbittorrent
     pkgs.tor
-    pkgs.wireguard-tools
     
     ## Tor browser does not load confugration from /etc/tor/torrc !
     # pkgs.tor-browser
@@ -85,6 +85,7 @@
     # Entertainment
     ## Social
     pkgs.discord
+    
     ## Video
     pkgs.vlc
 
