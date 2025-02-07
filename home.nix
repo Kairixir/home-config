@@ -70,6 +70,8 @@
     # Networking
     pkgs.linssid
     pkgs.nmap
+    pkgs.openvpn
+    pkgs.openvpn3
     pkgs.wavemon
     pkgs.wireguard-tools
 
