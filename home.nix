@@ -65,6 +65,7 @@
     pkgs.cargo
     
     # System management
+    pkgs.fsarchiver
     pkgs.ventoy
 
     ## Disk management
