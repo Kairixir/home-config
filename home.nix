@@ -30,18 +30,23 @@
 
   home.packages = [
     # Work tools
-    pkgs.eza
-    pkgs.gnomeExtensions.xremap
-    pkgs.jq
-    pkgs.uv
-    pkgs.progress
+    # (config.lib.nixGL.wrap pkgs.rpi-imager)
     (config.lib.nixGL.wrap pkgs.spotube)
     (config.lib.nixGL.wrap pkgs.wezterm)
+    pkgs.eza
+    pkgs.gnomeExtensions.xremap
+    #    pkgs.google-cloud-sdk
+    pkgs.jq
+    pkgs.kubernetes-helm
+    pkgs.progress
+    pkgs.uv
 
     ## Remote control
     # pkgs.rustdesk -> nix has old package version
 
     ## Version control
+    pkgs.gh
+    pkgs.gh-f
     pkgs.ghq
     pkgs.glab
     pkgs.jujutsu
@@ -56,6 +61,9 @@
     pkgs.obsidian
     pkgs.vscodium
     
+    ## Neovim plugins
+    pkgs.markdownlint-cli2
+
     # Education
     pkgs.drawio
     pkgs.megasync
@@ -78,9 +86,14 @@
     pkgs.openvpn
     #    pkgs.openvpn3
     pkgs.wavemon
-    pkgs.wireguard-tools
+    # pkgs.wireguard-tools
+    # pkgs.wireguard-ui
 
     # Privacy
+    (config.lib.nixGL.wrap pkgs.monero-gui)
+    # nixpkgs unstable has old version 2.1.2 even though it says 2.1.6
+    # hmmmmmmmmmmmm weird
+    # pkgs.bisq2
     pkgs.dnscrypt-proxy
     pkgs.i2p
     pkgs.qbittorrent
